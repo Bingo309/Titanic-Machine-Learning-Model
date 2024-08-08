@@ -2,7 +2,7 @@
 
 The Model uses logistic regression to predict whether a passenger survived the Titanic disaster based on features such as age, sex, class, and other related attributes after preprocessing and encoding the necessary data.
 
-**Fill missing values in the "Age" column**
+**1. Fill missing values in the "Age" column**
 ```python
 data['Age'].fillna(data['Age'].mean(), inplace=True)
 ```
@@ -12,7 +12,7 @@ Replaces missing values in the "Age" column with the average age.
 
 
 
-**Fill missing values in the "Embarked" column**
+**2. Fill missing values in the "Embarked" column**
 
 ```python
 data['Embarked'].fillna(data['Embarked'].mode()[0], inplace=True)
@@ -24,7 +24,7 @@ Replaces missing values in the "Embarked" column with the most common embarkatio
 
 
 
-**Drop the "PassengerId" and "Name" columns**
+**3. Drop the "PassengerId" and "Name" columns**
 Note: Ticket column also needed to dropped as it does not have a clear relationship to the survival of passengers
 ```python
 data = data.drop(['PassengerId', 'Name', 'Ticket'], axis=1)
@@ -34,7 +34,7 @@ data = data.drop(['PassengerId', 'Name', 'Ticket'], axis=1)
 
 
 
-**Check for duplicates in the dataset**
+**4. Check for duplicates in the dataset**
 
 ```python
 
@@ -48,7 +48,7 @@ Counts and prints the number of duplicate rows in the dataset.
 
 
 
-**Drop duplicate rows**
+**5. Drop duplicate rows**
 
 ```python
 data = data.drop_duplicates()
@@ -60,7 +60,7 @@ Removes duplicate rows to ensure each entry is unique.
 
 
 
-**Split the data into training and testing sets**
+**6. Split the data into training and testing sets**
 
 ```python
 from sklearn.model_selection import train_test_split
@@ -74,7 +74,7 @@ Divides the data into training and testing sets for model evaluation.
 
 
 
-**Create and train a Logistic Regression model**
+**7. Create and train a Logistic Regression model**
 
 ```python
 from sklearn.linear_model import LogisticRegression
@@ -92,7 +92,7 @@ Initializes and trains a Logistic Regression model using the training data.
 
 
 
-**Predict and evaluate model accuracy**
+**8. Predict and evaluate model accuracy**
 
 ```python
 from sklearn.metrics import accuracy_score
