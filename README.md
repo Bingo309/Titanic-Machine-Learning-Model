@@ -106,5 +106,5 @@ print(f"Accuracy of the model: {accuracy:.2f}")
 
 ![image](https://github.com/user-attachments/assets/e3da420e-c3ce-416d-bfd6-020d979a389e)
 
-and finally we get the Accuracy of the model which is [0.79]
+predicts outcomes using the trained model on test data, calculates the accuracy by comparing predictions to actual values, and prints the model's accuracy as a percentage and finally we get the Accuracy of the model which is [0.79].
 
