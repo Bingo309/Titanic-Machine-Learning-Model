@@ -48,7 +48,7 @@ Counts and prints the number of duplicate rows in the dataset.
 
 
 
-## 5. Drop duplicate rows***
+## 5. Drop duplicate rows
 
 ```python
 data = data.drop_duplicates()
