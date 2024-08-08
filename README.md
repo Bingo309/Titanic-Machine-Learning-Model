@@ -1,4 +1,5 @@
 ***Titanic Predictions Machine Model***
+
 The Model uses logistic regression to predict whether a passenger survived the Titanic disaster based on features such as age, sex, class, and other related attributes after preprocessing and encoding the necessary data.
 
 **Fill missing values in the "Age" column**
